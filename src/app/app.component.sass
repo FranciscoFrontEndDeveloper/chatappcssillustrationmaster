@@ -6,12 +6,28 @@
  display: grid
  grid-template-columns: 1fr
  grid-template-rows: 60% 40%
+
 .phone
  display: grid
  grid-template-columns: repeat(2,1fr)
-.sidePurple
- background: red
-.sideWhite
- background: aqua
+ &__sidePurple
+  background: red
+ &__sideWhite
+  background: aqua
+ &__contPhone
+  background: pink
+  position: absolute
+  z-index: 100
+  width: 100px
+  height: 100px
+  justify-content: center
+  top: 100px
+  right: 100px
+
 .sideText
  background: blue
+
+@media screen and ( min-width: 1440px)
+ .mainContainer
+  grid-template-columns: repeat(2,1fr)
+  grid-template-rows: 1fr
