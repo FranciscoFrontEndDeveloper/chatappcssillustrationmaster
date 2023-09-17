@@ -14,6 +14,9 @@
   grid-template-columns: repeat(12,1fr)
   grid-template-rows: repeat(12, 1fr)
   gap: 10px
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(217,214,217,1)
+  -moz-box-shadow: 10px 10px 5px 0px rgba(217,214,217,1)
+  box-shadow: 10px 10px 5px 0px rgba(217,214,217,1)
  &__topChat
   background-image: linear-gradient(to right, #8838ff, #a439ff, #bd3bff, #d43eff, #e942ff)
   grid-column: 1/13
@@ -53,3 +56,25 @@
  &__myChat
   grid-column: 1 / span 7
   grid-row: 3/4
+  background: pink
+  color: $VeryDarkDesaturatedVioletmainheading
+  font-size: 12px
+
+.imagCont
+  display: flex
+  flex-direction: row
+  height: 100%
+  grid-column: 4/13
+  grid-row: 4/4
+  justify-content: space-between
+  picture
+    img
+      width: 50px
+      height: 100%
+      border-radius: 10px
+
+.phoneContMain__yourChat
+  background: $White
+  font-size: 14px
+  grid-column: 5/13
+  grid-row: 5/5
